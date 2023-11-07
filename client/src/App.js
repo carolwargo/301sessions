@@ -1,15 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "../src/views/Home.jsx";
-
+import Footer from "./Footer/index.jsx";
 
 function App() {
   return (
     <div className="App">
       <Router>
+
         <Routes>
-          <Route exact path="/" component={Home}/>
+          <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
