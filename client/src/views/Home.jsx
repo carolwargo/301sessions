@@ -7,24 +7,32 @@ import { Card } from "react-bootstrap";
 import Tuesday from "../assets/Tuesday.png";
 import Thursday from "../assets/Thursday.png";
 import Rawlings from "../assets/Rawlings.png";
+import Header from '../components/Header/index.jsx';
+import Testimonials from '../components/Testimonials/index.jsx';
 import "../App.css";
+
+
 
 const Home = () => {
   return (
     <main>
-      <Container className="d-flex bg-black justify-content-center text-center p-4 text-white">
+      <Header />
+      <Container className="d-flex p-4 bg-black justify-content-center text-center p-4 text-white">
         <div>
-          <h3 >301 CATCHING SESSIONS SIGNUP</h3>
+          <h1  style={{
+    textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+    color:'red'
+   }}>301 CATCHING SESSIONS SIGNUP</h1>
           <p>
             Click on the session you would like to attend to purchase your spot.
           </p>
         </div>
       </Container>
-<br></br>
-      <Container>
+
+      <Container className="p-5">
         <Row className="justify-content-center bg-secondary-subtle"
         style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
-        <br></br>
+        
           <Col
             md={3}
             className="p-4 text-center"
@@ -165,79 +173,141 @@ const Home = () => {
                       BUY NOW
                     </a>
                   </button>
-                
-                  <br></br>
                 </Card.Body>
               </Card>
             </motion.div>
           </Col>
+          
+          <p style={{textAlign:'center', color:'gray'}}><b>* Locations: </b>   
+          301 North-
+          <a
+      href="https://www.google.com/maps?q=8288+Telegraph+Rd.+Odenton,+MD+21113"
+      style={{ fontSize: "14px" }}
+    >
+      {" "}
+       Rawlings Lab
+    </a>  &    
+    301 South-
+    <a
+      href="https://www.google.com/maps?q=250+W+Bay+Front+Rd+Lothian,+MD+20711"
+      style={{ fontSize: "14px" }}
+    >
+      {" "}           
+       The Impact Center
+    </a>
+          <br></br><i>** All participants will be required to sign the 301CATCHING  <a href="/assets/waiver.pdf" target="_blank" rel="noopener noreferrer"> waiver</a> prior to participation. </i></p>
         </Row>
         </Container>
         <br></br>
-        <br></br>
-        <Container className="bg-secondary-subtle p-5 text-black align-items-center justify-content-center"
-         style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
-        
-        <Row>
-        <Col md={6}>
-            <p>
-              <b>
-                <u>WHAT TO BRING</u>
-              </b>{" "}
-              <br></br>
-             cup, gear, mitt, drink, athletic shoes (no cleats)
-            </p>
-            </Col>
-            <Col md={3}>
-        <p>
-              <b>
-              <u>"301 South" Location</u>
-              </b>{" "}
-              <br></br>
-              The Impact Center<br></br>
-              <img
-                src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
-                alt="Google Maps Pin"
-                style={{
-                  height: "18px", // Set the desired height in pixels
-                  width: "auto", // Let the width adjust proportionally
-                }}
-              />
-              <a
-                href="https://www.google.com/maps?q=250+W+Bay+Front+Rd+Lothian,+MD+20711"
-                style={{ fontSize: "14px" }}
-              >
-                {" "}
-                250 W Bay Front Rd Lothian
-              </a>
-            </p>
-            </Col>
-            <Col md={3}>
-        <p>
-              <b>
-                <u>"301 North" Location</u>
-              </b>{" "}
-              <br></br>
-              The Impact Center<br></br>
-              <img
-                src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
-                alt="Google Maps Pin"
-                style={{
-                  height: "18px", // Set the desired height in pixels
-                  width: "auto", // Let the width adjust proportionally
-                }}
-              />
-              <a
-                href="https://www.google.com/maps?q=8288+Telegraph+Rd.+Odenton,+MD+21113"
-                style={{ fontSize: "14px" }}
-              >
-                {" "}
-               8288 Telegraph Rd. Odenton
-              </a>
-            </p>
-            </Col>
-        </Row>
+        <Container className="p-3 text-white bg-black align-items-center justify-content-center"
+         style={{borderRadius:'.5rem'}}>
+      <Container className="p-5">    
+<Row >
+
+<Col >
+
+  <h1
+   style={{
+    textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+    color:'red',
+   }}
+  ><b> 301 Sessions F.A.Q.</b></h1>
+</Col>
+</Row>
+<br></br>
+<br></br>
+<Row>
+  
+<Col md={6}>
+  <h5><i>Q: What do I need to bring?</i></h5>
+  <p>A: All catchers should bring cup, gear, mitt, drink, athletic shoes {"NO CLEATS OF ANY KIND ALLOWED."}</p>
+  <h5><i>Q: What is the cancellation policy?</i></h5>
+<p>
+ A: <b>Refund & Weather Policy:</b> If injury or illness occurs, please{" "}
+  <a href="tel:443-771-1708">Contact Us</a> immediately to discuss possible options
+  for future sessions. Due to the use of private facilities, events will take
+  place as scheduled. In the event of a cancellation, participants will be
+  notified immediately.
+  We appreciate your
+  understanding and cooperation.
+</p>
+  <h5><i>Q: Who do I contact with questions?</i></h5>
+  <p>
+  You may <a href="mailto:301CATCHING@GMAIL.COM">Email Us</a> or {" "}
+  <a href="tel:443-771-1708">Call Us</a> at anytime.
+  </p>
+  
+</Col>
+<Col md={6}>
+<h5><i>Q: What Are The Facility Addresses?</i></h5>
+  
+  <Container className="301-south" id='301-south'>
+<p>
+    <b>
+    A: "301 SOUTH"
+    </b>{" "}
+    <br></br>
+    The Impact Center<br></br>
+    <img
+      src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
+      alt="Google Maps Pin"
+      style={{
+        height: "18px", // Set the desired height in pixels
+        width: "auto", // Let the width adjust proportionally
+      }}
+    />
+    <a
+      href="https://www.google.com/maps?q=250+W+Bay+Front+Rd+Lothian,+MD+20711"
+      style={{ fontSize: "14px" }}
+    >
+      {" "}
+      250 W Bay Front Rd Lothian
+    </a>
+  </p>
+  </Container>
+  <Container className= '301-north' id='301-north'>
+  <p>
+    <b>
+    "301 NORTH"
+    </b>{" "}
+    <br></br>
+    The Rawlings Lab<br></br>
+    <img
+      src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
+      alt="Google Maps Pin"
+      style={{
+        height: "18px", // Set the desired height in pixels
+        width: "auto", // Let the width adjust proportionally
+      }}
+    />
+    <a
+      href="https://www.google.com/maps?q=8288+Telegraph+Rd.+Odenton,+MD+21113"
+      style={{ fontSize: "14px" }}
+    >
+      {" "}
+     8288 Telegraph Rd. Odenton
+    </a>
+  </p>
+  </Container>
+  <h5><i>Q: What Winter Sessions Are Offered?</i></h5>
+  <Container>
+    <ol>
+      <li>"301 NORTH"- High School 12/6, 12/13, 12/20, 12/27</li>
+      <li>"301 SOUTH"- High School 12/12, 12/19, 12/26, 12/27 <br></br></li>
+      <li>"301 SOUTH"- Ages: 9-14yrs. 12/12, 12/19, 12/26, 12/27 <br></br></li>
+    </ol>
+  </Container>
+</Col>
+
+</Row>
+</Container>
       </Container>
+    
+    
+      <Container className="p-2 border-top">
+      <br></br>
+                <Testimonials />
+</Container>
       <br></br>
       <br></br>
     </main>
