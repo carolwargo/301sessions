@@ -195,17 +195,16 @@ const Home = () => {
       {" "}           
        The Impact Center
     </a>
-          <br></br><i>** All participants will be required to sign the 301CATCHING  <a href="/assets/waiver.pdf" target="_blank" rel="noopener noreferrer"> waiver</a> prior to participation. </i></p>
+          <br></br><i>** All participants will be required to sign the 301CATCHING <a href="/assets/waiver.pdf" target="_blank">
+     waiver</a> prior to participation. </i></p>
         </Row>
         </Container>
         <br></br>
-        <Container className="p-3 text-white bg-black align-items-center justify-content-center"
+        <Container className="p-3 align-items-center justify-content-center border-top"
          style={{borderRadius:'.5rem'}}>
       <Container className="p-5">    
-<Row >
-
+<Row>
 <Col >
-
   <h1
    style={{
     textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
@@ -216,8 +215,7 @@ const Home = () => {
 </Row>
 <br></br>
 <br></br>
-<Row>
-  
+<Row >
 <Col md={6}>
   <h5><i>Q: What do I need to bring?</i></h5>
   <p>A: All catchers should bring cup, gear, mitt, drink, athletic shoes {"NO CLEATS OF ANY KIND ALLOWED."}</p>

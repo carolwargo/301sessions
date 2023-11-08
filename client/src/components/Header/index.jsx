@@ -21,7 +21,7 @@ const Header = () => {
     <header className="bg-black text-white mb-4 py-3 display-flex align-center"
             style={headerStyle}>
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
-          <h1 className="m-0" style={{ fontSize: '4rem' }}>
+          <h1 className="m-0" style={{ fontSize: '3rem' }}>
             301_CATCHING
           </h1>
         <h4 style={{ fontFamily: "icon" }}>
