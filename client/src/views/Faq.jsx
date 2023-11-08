@@ -3,25 +3,32 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <main>
-      <Container className="faq-container">
-        <Row className="faq-header-row">
-          
-            <h1 className="faq-header"
-              style={{
-                textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-                color: "red",
-              }}
-            >
-              <b> 301 Sessions F.A.Q.</b>
-            </h1> 
-        </Row>
+    <main className="pt-3 p-3 justify-content-center align-content-around">
 
-        <br></br>
-        <br></br>
+<Container className="d-flex justify-content-center text-center p-3 text-black"
+      style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
     
-        <Row className="faq-content-row">
+                }}>
+        <div>
+          <h1  style={{
+    textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+    color:'red'
+   }}> 301 Sessions F.A.Q.</h1>
+          <p>
+           F.A.Q. Frequently Asked Questions
+          </p>
+        </div>
+      </Container>
+      <Container className="faq-container border border-black"
+         style={{ 
+         boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+         borderRadius:'.5rem'
+                   }}>
+        <br></br>
+
+        <Row className="faq-content-row p-4">
           <Col md={6}>
+            <Container>
             <h5>
               <i>Q: What do I need to bring?</i>
             </h5>
@@ -29,6 +36,8 @@ const Faq = () => {
               A: All catchers should bring cup, gear, mitt, drink, athletic
               shoes {"NO CLEATS OF ANY KIND ALLOWED."}
             </p>
+            </Container>
+            <Container>
             <h5>
               <i>Q: What is the cancellation policy?</i>
             </h5>
@@ -40,6 +49,8 @@ const Faq = () => {
               event of a cancellation, participants will be notified
               immediately. We appreciate your understanding and cooperation.
             </p>
+            </Container>
+            <Container>
             <h5>
               <i>Q: Who do I contact with questions?</i>
             </h5>
@@ -47,13 +58,13 @@ const Faq = () => {
               You may <a href="mailto:301CATCHING@GMAIL.COM">Email Us</a> or{" "}
               <a href="tel:443-771-1708">Call Us</a> at anytime.
             </p>
+            </Container>
           </Col>
           <Col md={6}>
+            <Container>
             <h5>
               <i>Q: What Are The Facility Addresses?</i>
             </h5>
-
-            <Container className="301-south" id="301-south">
               <p>
                 <b>A: "301 SOUTH"</b> <br></br>
                 The Impact Center<br></br>
@@ -95,20 +106,16 @@ const Faq = () => {
                 </a>
               </p>
             </Container>
-            <h5>
-              <i>Q: What Winter Sessions Are Offered?</i>
-            </h5>
+
             <Container>
-              <ol>
-                <li>"301 NORTH"- High School 12/6, 12/13, 12/20, 12/27</li>
-                <li>
-                  "301 SOUTH"- High School 12/12, 12/19, 12/26, 12/27 <br></br>
-                </li>
-                <li>
-                  "301 SOUTH"- Ages: 9-14yrs. 12/12, 12/19, 12/26, 12/27{" "}
-                  <br></br>
-                </li>
-              </ol>
+              <h5>
+                <i>Q: What Winter Sessions Are Offered?</i>
+              </h5>
+              <p>
+               <b><i>"301 NORTH"</i> - Grades: 9-12 </b>12/6, 12/13, 12/20, 12/27 <br></br>
+               <b><i>"301 SOUTH"</i> - Grades: 9-12 </b>12/12, 12/19, 12/26, 12/27 <br></br>
+               <b><i>"301 SOUTH"</i> - Ages: 9-14yrs </b> 12/12, 12/19, 12/26, 12/27 
+              </p>
             </Container>
           </Col>
         </Row>

@@ -34,7 +34,8 @@ const cardData = [
 
 export default function GridExample() {
   return (
-    <Container className='p-5'>
+    <main className='pt-3 p-3'>
+    <Container className='align-content-center justify-content-center'>
       <h1
       
       style={{
@@ -45,7 +46,7 @@ export default function GridExample() {
         See What Some Have To Say...</h1>
         <br></br>
       <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about camaraderie, discipline, growth, intelligent work, consistency, and the desire to overcome challenges.</p>
-    <Row xs={1} md={2} lg={2} className="g-4 p-2">
+    <Row xs={1} md={2} lg={2} className="g-4 p-4">
       {cardData.map((card) => (
         <Col key={card.id}>
           <Card>
@@ -59,5 +60,6 @@ export default function GridExample() {
       ))}
     </Row>
     </Container>
+    </main>
   );
 }
