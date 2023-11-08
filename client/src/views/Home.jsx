@@ -22,7 +22,8 @@ const Home = () => {
       </Container>
 <br></br>
       <Container>
-        <Row className="justify-content-center ">
+        <Row className="justify-content-center bg-secondary-subtle"
+        style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
         <br></br>
           <Col
             md={3}
@@ -171,10 +172,26 @@ const Home = () => {
             </motion.div>
           </Col>
         </Row>
+        </Container>
+        <br></br>
+        <br></br>
+        <Container className="bg-secondary-subtle p-5 text-black align-items-center justify-content-center"
+         style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
+        
         <Row>
+        <Col md={6}>
+            <p>
+              <b>
+                <u>WHAT TO BRING</u>
+              </b>{" "}
+              <br></br>
+             cup, gear, mitt, drink, athletic shoes (no cleats)
+            </p>
+            </Col>
+            <Col md={3}>
         <p>
               <b>
-                <u>WHERE</u>
+              <u>"301 South" Location</u>
               </b>{" "}
               <br></br>
               The Impact Center<br></br>
@@ -194,7 +211,31 @@ const Home = () => {
                 250 W Bay Front Rd Lothian
               </a>
             </p>
-
+            </Col>
+            <Col md={3}>
+        <p>
+              <b>
+                <u>"301 North" Location</u>
+              </b>{" "}
+              <br></br>
+              The Impact Center<br></br>
+              <img
+                src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
+                alt="Google Maps Pin"
+                style={{
+                  height: "18px", // Set the desired height in pixels
+                  width: "auto", // Let the width adjust proportionally
+                }}
+              />
+              <a
+                href="https://www.google.com/maps?q=8288+Telegraph+Rd.+Odenton,+MD+21113"
+                style={{ fontSize: "14px" }}
+              >
+                {" "}
+               8288 Telegraph Rd. Odenton
+              </a>
+            </p>
+            </Col>
         </Row>
       </Container>
       <br></br>

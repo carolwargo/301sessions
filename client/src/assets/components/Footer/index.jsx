@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <div className="footer bg-black">
         <div className="container">
-        <Container className="d-flex justify-content-center text-center p-4 text-white">
-  <Col className="text-end p-2">
+        <Container className="d-flex justify-content-center p-4 text-white">
+  <Col className="d-flex text-center p-2">
     <p>Contact:
     <a href="tel:443-771-1708" className="text-white mx-2">
       <FaPhone />
@@ -22,8 +22,11 @@ const Footer = () => {
     </a>
     </p>
   </Col>
- 
-  <Col className="d-flex text-white p-2">
+
+  <Col className="d-flex text-center p-2">
+    <p>© 2023 301CATCHING</p>
+ </Col>
+  <Col className="d-flex text-center text-white p-2">
 
   <p>Follow:</p>
     <a
