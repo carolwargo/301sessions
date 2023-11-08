@@ -289,11 +289,11 @@ const Home = () => {
   </Container>
   <h5><i>Q: What Winter Sessions Are Offered?</i></h5>
   <Container>
-    <ol>
-      <li>"301 NORTH"- High School 12/6, 12/13, 12/20, 12/27</li>
-      <li>"301 SOUTH"- High School 12/12, 12/19, 12/26, 12/27 <br></br></li>
-      <li>"301 SOUTH"- Ages: 9-14yrs. 12/12, 12/19, 12/26, 12/27 <br></br></li>
-    </ol>
+   
+      <p>"301 NORTH"- High School 12/6, 12/13, 12/20, 12/27</p>
+      <p>"301 SOUTH"- High School 12/12, 12/19, 12/26, 12/27 <br></br></p>
+      <p>"301 SOUTH"- Ages: 9-14yrs. 12/12, 12/19, 12/26, 12/27 <br></br></p>
+ 
   </Container>
 </Col>
 
