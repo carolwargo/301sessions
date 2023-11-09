@@ -2,7 +2,6 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import MDBRipple from 'mdb-react-ui-kit';
 
 import Container from 'react-bootstrap/Container';
 import John4 from '../../assets/images/John4.png'; // Make sure to import your image
@@ -48,14 +47,9 @@ export default function GridExample() {
         See What Some Have To Say...</h1>
         <br></br>
       <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about camaraderie, discipline, growth, intelligent work, consistency, and the desire to overcome challenges.</p>
-    <Row xs={1} md={2} lg={2} className="g-5 p-5">
+    <Row xs={1} md={2} lg={2} className="g-5 ">
       {cardData.map((card) => (
         <Col key={card.id}>
-          <MDBRipple
-      className='bg-image hover-overlay shadow-1-strong rounded'
-      rippleTag='div'
-      rippleColor='light'
-    >
           <Card   style={{boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",}}>
             <Card.Img variant="top" src={card.image} />
             <Card.Body style={{backgroundColor:"black"}}>
@@ -63,7 +57,6 @@ export default function GridExample() {
               <Card.Text>{card.text}</Card.Text>
             </Card.Body>
           </Card>
-          </MDBRipple>
         </Col>
       ))}
     </Row>

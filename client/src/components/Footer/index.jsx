@@ -1,58 +1,42 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
-import { FaEnvelope, FaInstagram, FaPhone, FaTwitter } from "react-icons/fa";
+import { Container} from "react-bootstrap";
+import { MDBBtn, MDBCol, MDBIcon, MDBRow } from "mdb-react-ui-kit";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Footer = () => {
-    return (
-        <div className="footer bg-black">
-        <div className="container">
-        <Container className="d-flex  p-4 text-white">
-  <Col md={4} className="d-flex justify-content-end p-2">
-    <p>Contact:
-    <a href="tel:443-771-1708" className="text-white mx-2">
-      <FaPhone />
-    </a>
-    <a
-      href="https://www.instagram.com/301southsessions/"
-      className="text-white mx-2"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaEnvelope />
-    </a>
-    </p>
-  </Col>
+  return (
+    <div className="footer bg-black p-4 d-flex justify-content-center">
+      <Container>
+        
+        <p className="text-center text-white">
+          Connect with us on social media.
+          </p>
+          <MDBRow className='d-flex justify-content-center text-center text-white'> 
+         
+<MDBCol md={12} className="d-flex justify-content-center text-center text-white">
+          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#3b5998' }}>
+            <MDBIcon fab icon='facebook-f' size='md' />
+          </MDBBtn>
 
-  <Col md={4} className="text-center p-2 ">
-    <p className="pl-4">© 2023 301CATCHING</p>
- </Col>
- <Col md={4} className="d-flex text-white p-2">
+          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#55acee' }}>
+            <MDBIcon fab icon='twitter' size='md' />
+          </MDBBtn>
 
-  <p>Follow:</p>
-    <a
-      href="https://www.instagram.com/301southsessions/"
-      className="text-white mx-2"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaInstagram />
-    </a>
- 
-    <a
-      href="https://www.instagram.com/301southsessions/"
-      className="text-white mx-2"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FaTwitter />
-    </a>
-  </Col>
-</Container>
-        </div>
-        </div>
-    );
+          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#dd4b39' }}>
+            <MDBIcon fab icon='google' size='md' />
+          </MDBBtn>
+
+          <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#ac2bac' }}>
+            <MDBIcon fab icon='instagram' size='md' />
+          </MDBBtn>
+          </MDBCol>
+          </MDBRow>
+    
+      </Container>
+    </div>
+  );
 }
 
 export default Footer;
+

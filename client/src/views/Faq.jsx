@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <main className="pt-3 p-3 justify-content-center align-content-around">
+    <main className=" p-3 justify-content-center align-content-around">
 
 <Container className="d-flex justify-content-center text-center p-3 text-black"
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",

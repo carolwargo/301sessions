@@ -1,8 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-
-import Header from "../components/Header/index.jsx";
 import Testimonials from "../components/Testimonials/index.jsx";
 import Faq from "../views/Faq.jsx";
 import Sessions from "../views/Sessions.jsx";
@@ -11,10 +9,9 @@ import "../App.css";
 const Home = () => {
   return (
     <main className="p-5">
-      <Header />
      
-      <Container className="p-2 border-top">
-      <br></br>
+      <Container className="p-1">
+     
         <Sessions />
       </Container>
       <Container className="p-2 border-top">
@@ -25,7 +22,7 @@ const Home = () => {
       <br></br>
         <Testimonials />
       </Container>
-      <br></br>
+
     </main>
   );
 };

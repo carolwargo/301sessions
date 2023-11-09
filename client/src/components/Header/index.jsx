@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { MDBBtn, MDBIcon, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import CoverResize from '../../assets/images/CoverResize.png'; 
 import './header.css';
-
+//CTA import { Link } from 'react-router-dom';
 
 const Header = () => {
   
@@ -18,6 +18,7 @@ const Header = () => {
   };
  
   return (
+    <main>
     <header className="bg-black text-white mb-4 py-3 display-flex align-center"
             style={headerStyle}>
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
@@ -38,9 +39,45 @@ const Header = () => {
             
                 </h4>
                 <div>
+                <MDBRow>
+                  <MDBCol>
+      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#3b5998' }}>
+        <MDBIcon fab icon='facebook-f' size='lg' />
+      </MDBBtn>
+
+      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#55acee' }}>
+        <MDBIcon fab icon='twitter' size='lg' />
+      </MDBBtn>
+
+      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#dd4b39' }}>
+        <MDBIcon fab icon='google' size='lg' />
+      </MDBBtn>
+
+      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#ac2bac' }}>
+        <MDBIcon fab icon='instagram' size='lg' />
+      </MDBBtn>
+      </MDBCol>
+    </MDBRow>
+
+
+
+  {/* 
+                  <MDBCol>
+     <br></br>
+      
+      <MDBBtn className='me-1' color='warning' id='sessions'>
+        <Link to="#sessions">
+        Register Now
+        </Link>
+      </MDBBtn>
+     
+      </MDBCol>
+   */}
+
         </div>
         </div>
     </header>
+    </main>
   );
 };
 

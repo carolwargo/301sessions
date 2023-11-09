@@ -13,9 +13,10 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <main className="pt-3 p-3">
+    <main className=" p-3">
 <Container >
-      <Row className="d-flex justify-content-center text-center text-black"
+      <Row className="d-flex justify-content-center text-center text-black" 
+      
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)"
                 }}>
         <div>
@@ -28,7 +29,8 @@ const Home = () => {
         </div>
      </Row>
       
-        <Row className="justify-content-center border border-black"
+        <Row className="justify-content-center border border-black" 
+        id="#sessions"
         style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
         
           <Col
