@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import MDBRipple from 'mdb-react-ui-kit/dist/components/MDBRipple';
+import MDBRipple from 'mdb-react-ui-kit';
 
 import Container from 'react-bootstrap/Container';
 import John4 from '../../assets/images/John4.png'; // Make sure to import your image
