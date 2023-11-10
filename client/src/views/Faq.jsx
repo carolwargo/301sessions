@@ -25,7 +25,7 @@ const Faq = () => {
          <br></br>
             <Container>
             <h5>
-              <i>Q: What is the cancellation policy?</i>
+              <i>Q: What is the refund policy?</i>
             </h5>
             <p>
               A: <b>Refund:</b> No Refunds. If injury or illness occurs,
