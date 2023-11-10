@@ -107,7 +107,7 @@ const Faq = () => {
             </h5>
             <p>
               You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
-              <a href="tel:443-771-1708">Call Corey Wargo</a> at anytime.
+              <a href="tel:443-771-1708">Call</a> Corey Wargo at anytime.
             </p>
             </Container>
           </Col>
