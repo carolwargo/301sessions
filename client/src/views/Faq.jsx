@@ -1,24 +1,42 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import FaqPic from "../assets/FaqPic.png";
 const Faq = () => {
   return (
     <main>
-    <Container className="d-flex justify-content-center align-items-center text-center p-3 text-black" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
-      <div>
-        <h1 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", color: 'red' }}> 301 SESSIONS F.A.Q.</h1>
-        <p>F.A.Q. Frequently Asked Questions</p>
-      </div>
-    </Container>
+      <Container className="d-flex justify-content-center align-items-center text-center p-3 text-black" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
+        <div>
+          <h1 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", color: 'red' }}> 301 SESSIONS F.A.Q.</h1>
+          <p>F.A.Q. Frequently Asked Questions</p>
+        </div>
+      </Container>
       <Container className="faq-container border border-black"
-         style={{ 
-         boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-         borderRadius:'.5rem'
-                   }}>
+        style={{ 
+          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+          borderRadius: '.5rem'
+        }}>
 
-<Row className="faq-content-row p-4 bg-secondary-subtle text-black justify-content-between">
+        <Row className="faq-content-row p-4 bg-secondary-subtle text-black justify-content-between">
+        
 <Col md={6} className="mx-auto">
+<Container>
+<img src={FaqPic} alt="faq-pic" className="img-fluid" />
+         </Container>
+         <br></br>
             <Container>
+            <h5>
+              <i>Q: What is the cancellation policy?</i>
+            </h5>
+            <p>
+              A: <b>Refund:</b> No Refunds. If injury or illness occurs,
+              please <a href="tel:443-771-1708">Contact Us</a> immediately to
+              discuss possible options.  
+            </p>
+            </Container>
+          
+          </Col>
+          <Col md={6} className="mx-auto">
+          <Container>
             <h5>
               <i>Q: What do I need to bring?</i>
             </h5>
@@ -27,30 +45,6 @@ const Faq = () => {
               shoes {"NO CLEATS OF ANY KIND ALLOWED."}
             </p>
             </Container>
-            <Container>
-            <h5>
-              <i>Q: What is the cancellation policy?</i>
-            </h5>
-            <p>
-              A: <b>Refund & Weather Policy:</b> If injury or illness occurs,
-              please <a href="tel:443-771-1708">Contact Us</a> immediately to
-              discuss possible options for future sessions. Due to the use of
-              private facilities, events will most like take place as scheduled. In the rare
-              event of a cancellation, participants will be notified
-              immediately. We appreciate your understanding and cooperation.
-            </p>
-            </Container>
-            <Container>
-            <h5>
-              <i>Q: Who do I contact with questions?</i>
-            </h5>
-            <p>
-              You may <a href="mailto:301CATCHING@GMAIL.COM">Email Us</a> or{" "}
-              <a href="tel:443-771-1708">Call Us</a> at anytime.
-            </p>
-            </Container>
-          </Col>
-          <Col md={6} className="mx-auto">
             <Container>
             <h5>
               <i>Q: What Are The Facility Addresses?</i>
@@ -107,11 +101,18 @@ const Faq = () => {
                <b><i>"301 SOUTH"</i> - Ages: 9-14yrs </b> 12/12, 12/19, 12/26, 12/27 
               </p>
             </Container>
+            <Container>
+            <h5>
+              <i>Q: Who do I contact with questions?</i>
+            </h5>
+            <p>
+              You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
+              <a href="tel:443-771-1708">Call Corey Wargo</a> at anytime.
+            </p>
+            </Container>
           </Col>
         </Row>
       </Container>
-      <br></br>
-      <br></br>
     </main>
   );
 };

@@ -41,7 +41,6 @@ const Header = () => {
                 elevate their game.
             
                 </h5>
-                <br></br>
                 <div>
                     
                 <MDBRow>
