@@ -29,7 +29,7 @@ const Sessions = () => {
         </div>
      </Row>
       
-        <Row className="justify-content-center " 
+        <Row className="justify-content-center align-items-center" 
         id="sessions">
         
           <Col
