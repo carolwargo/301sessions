@@ -13,7 +13,7 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <main className=" p-3">
+    <main className=" p-3 ">
 <Container >
       <Row className="d-flex justify-content-center text-center text-black" 
       
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
      </Row>
       
-        <Row className="justify-content-center border border-black" 
+        <Row className="justify-content-center " 
         id="#sessions">
         
           <Col
@@ -105,7 +105,7 @@ const Home = () => {
           <Col md={3} className="p-4">
             <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
               <Card
-                className="bg-dark text-white"
+                className="tuesday"
                 style={{
                   boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
                   width: "100%",
@@ -144,7 +144,7 @@ const Home = () => {
           <Col md={3} className="p-4">
             <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
               <Card
-                className="bg-dark text-white"
+                className="rawlings"
                 style={{
                   boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", // Change the rgba value to white
                   width: "100%",
@@ -199,6 +199,7 @@ const Home = () => {
      </Container>
         </Row>
         </Container>
+        <br></br>
     </main>
   );
 };

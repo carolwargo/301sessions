@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <main className=" p-3 justify-content-center align-content-around">
+    <main className=" p-3 justify-content-center align-content-around ">
 
 <Container className="d-flex justify-content-center text-center p-3 text-black"
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
@@ -13,7 +13,7 @@ const Faq = () => {
           <h1  style={{
     textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
     color:'red'
-   }}> 301 Sessions F.A.Q.</h1>
+   }}> 301 SESSIONS F.A.Q.</h1>
           <p>
            F.A.Q. Frequently Asked Questions
           </p>
@@ -24,9 +24,8 @@ const Faq = () => {
          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
          borderRadius:'.5rem'
                    }}>
-        <br></br>
 
-        <Row className="faq-content-row p-4">
+        <Row className="faq-content-row p-4 bg-secondary-subtle text-black">
           <Col md={6}>
             <Container>
             <h5>
@@ -45,7 +44,7 @@ const Faq = () => {
               A: <b>Refund & Weather Policy:</b> If injury or illness occurs,
               please <a href="tel:443-771-1708">Contact Us</a> immediately to
               discuss possible options for future sessions. Due to the use of
-              private facilities, events will take place as scheduled. In the
+              private facilities, events will most like take place as scheduled. In the rare
               event of a cancellation, participants will be notified
               immediately. We appreciate your understanding and cooperation.
             </p>
@@ -66,7 +65,7 @@ const Faq = () => {
               <i>Q: What Are The Facility Addresses?</i>
             </h5>
               <p>
-                <b>A: "301 SOUTH"</b> <br></br>
+              A: <b> "301 SOUTH"</b> <br></br>
                 The Impact Center<br></br>
                 <img
                   src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"
@@ -120,6 +119,8 @@ const Faq = () => {
           </Col>
         </Row>
       </Container>
+      <br></br>
+      <br></br>
     </main>
   );
 };

@@ -13,7 +13,7 @@ import Ryan4 from '../../assets/images/Ryan4.png'; // Make sure to import your i
 const customContainerStyle = {
   maxWidth: "600px", // Adjust the maximum width as needed
   margin: "0 auto", // Center the container
-  boxShadow: "0 0 30px rgba(255, 255, 255, 0.5)", 
+  boxShadow: "0 0 30px rgba(0, 0, 0, 0.5)", 
   paddingRight: "0", // Add this line to remove right padding
   paddingLeft: "0", // Add this line to remove left padding
 };
@@ -27,21 +27,22 @@ const customImgStyle = {
 export default function CarouselFadeExample() {
   return (
     <div>
+      <br></br>
     <Container>
         <Row className="d-flex justify-content-center ">
           <Col md={4}>
             <br></br>
-            <br></br>
+           
         <h1
-      
       style={{
         textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
         color:'red'
        }}
        >
-        See What Some Have To Say...</h1>
+        TESTIMONIALS</h1>
+        <h4>See What People Have To Say...</h4>
         <br></br>
-      <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about camaraderie, discipline, growth, intelligent work, consistency, and the desire to overcome challenges.</p>
+      <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
       </Col>
       
           <Col md={6} className="fluid " style={customContainerStyle}>

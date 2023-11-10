@@ -23,10 +23,12 @@ const Header = () => {
     <header className="bg-black text-white mb-4 py-3 display-flex align-center"
             style={headerStyle}>
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
-          <h1 className="m-0" style={{ fontSize: '3rem' }}>
+          <h1 className="m-0" style={{ fontSize: '3.5rem',  textShadow: "2px 2px 4px #ffffff"
+ }}>
             301_CATCHING
           </h1>
-        <h4 style={{ fontFamily: "icon" }}>
+          <br></br>
+        <h5 style={{ fontFamily: "icon", paddingRight:'3rem', paddingLeft:'3rem' }}>
                 {" "}
                 The <span style={{color:"red"}}>
                   {" "}
@@ -34,11 +36,12 @@ const Header = () => {
                 </span>{" "}
                 for everything catching:
                 <br></br>
-              
+                
                 Providing Players with the skills to master their craft &
                 elevate their game.
             
-                </h4>
+                </h5>
+                <br></br>
                 <div>
                 <MDBRow>
                   <MDBCol>
