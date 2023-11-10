@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/301sessions/static/css/main.04f77466.css",
+    "main.js": "/301sessions/static/js/main.aed9084c.js",
+    "static/js/787.d5fa4d18.chunk.js": "/301sessions/static/js/787.d5fa4d18.chunk.js",
+    "static/media/John4.png": "/301sessions/static/media/John4.ba3097d04336ab97c61a.png",
+    "static/media/Guy4.png": "/301sessions/static/media/Guy4.ee46895125e51ff4fbf5.png",
+    "static/media/Joe4.png": "/301sessions/static/media/Joe4.e8277ce20da93efa6918.png",
+    "static/media/Ryan4.png": "/301sessions/static/media/Ryan4.17ba90a42c0256fd649c.png",
+    "static/media/fa-solid-900.ttf": "/301sessions/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/Thursday.png": "/301sessions/static/media/Thursday.69a9890f442cfd81b6b3.png",
+    "static/media/CoverResize.png": "/301sessions/static/media/CoverResize.4e36b2fff3765af75f30.png",
+    "static/media/Rawlings.png": "/301sessions/static/media/Rawlings.476708ef31ad64dcdcf0.png",
+    "static/media/Tuesday.png": "/301sessions/static/media/Tuesday.6ad114bf01792bb37059.png",
+    "static/media/fa-brands-400.ttf": "/301sessions/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/301sessions/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/301sessions/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/301sessions/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/301sessions/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/301sessions/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/301sessions/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/301sessions/index.html",
+    "main.04f77466.css.map": "/301sessions/static/css/main.04f77466.css.map",
+    "main.aed9084c.js.map": "/301sessions/static/js/main.aed9084c.js.map",
+    "787.d5fa4d18.chunk.js.map": "/301sessions/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04f77466.css",
+    "static/js/main.aed9084c.js"
+  ]
+}
