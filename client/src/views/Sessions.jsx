@@ -13,7 +13,7 @@ import "../App.css";
 
 const Sessions = () => {
   return (
-    <main className=" p-3 ">
+    <main className=" p-5 ">
 <Container >
       <Row className="d-flex justify-content-center text-center text-black" 
       
@@ -41,7 +41,7 @@ const Sessions = () => {
            
            
             <p>
-              <b>TUESDAY SESSION </b>"South"
+              <b>TUESDAY SESSION</b> <br></br>"South"
             
               Grades 9-12<br></br>
               12/12, 12/19, 12/26<br></br>

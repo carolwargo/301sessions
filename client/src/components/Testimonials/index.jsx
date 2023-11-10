@@ -29,8 +29,8 @@ export default function CarouselFadeExample() {
     <div>
       <br></br>
     <Container>
-        <Row className="d-flex justify-content-center ">
-          <Col md={4}>
+        <Row className="d-flex justify-content-center p-3">
+          <Col md={6}>
             <br></br>
            
         <h1
@@ -45,7 +45,7 @@ export default function CarouselFadeExample() {
       <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
       </Col>
       
-          <Col md={6} className="fluid " style={customContainerStyle}>
+          <Col md={5} className="fluid " style={customContainerStyle}>
             <Carousel fade>
               <Carousel.Item>
                 <img
