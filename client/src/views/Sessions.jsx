@@ -41,7 +41,7 @@ const Sessions = () => {
            
            
             <p>
-              <b>TUESDAY SESSION</b> <br></br>"South"
+              <b>TUESDAY SESSION</b> "South"
             
               Grades 9-12<br></br>
               12/12, 12/19, 12/26<br></br>
