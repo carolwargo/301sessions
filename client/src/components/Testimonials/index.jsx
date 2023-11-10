@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Carousel from "react-bootstrap/Carousel";
 
 import Container from 'react-bootstrap/Container';
 import John4 from '../../assets/images/John4.png'; // Make sure to import your image
@@ -9,35 +9,30 @@ import Guy4 from '../../assets/images/Guy4.png'; // Make sure to import your ima
 import Joe4 from '../../assets/images/Joe4.png'; // Make sure to import your image
 import Ryan4 from '../../assets/images/Ryan4.png'; // Make sure to import your image
 
-const cardData = [
-  {
-    id: 1,
-  
-    image: Guy4,
-  },
-  {
-    id: 2,
-  
-    image: John4,
-  },
-  {
-    id: 3,
-  
-    image: Ryan4,
-  },
-  {
-    id: 4,
-  
-    image: Joe4,
-  },
-];
 
+const customContainerStyle = {
+  maxWidth: "600px", // Adjust the maximum width as needed
+  margin: "0 auto", // Center the container
+  boxShadow: "0 0 30px rgba(255, 255, 255, 0.5)", 
+  paddingRight: "0", // Add this line to remove right padding
+  paddingLeft: "0", // Add this line to remove left padding
+};
 
-export default function GridExample() {
+const customImgStyle = {
+  width: "100%", // Make images fill the container width
+  height: "auto",
+  };
+  
+
+export default function CarouselFadeExample() {
   return (
-    <main className='pt-3 p-3'>
-    <Container className='align-content-center justify-content-center'>
-      <h1
+    <div>
+    <Container>
+        <Row className="d-flex justify-content-center ">
+          <Col md={4}>
+            <br></br>
+            <br></br>
+        <h1
       
       style={{
         textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
@@ -47,20 +42,48 @@ export default function GridExample() {
         See What Some Have To Say...</h1>
         <br></br>
       <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about camaraderie, discipline, growth, intelligent work, consistency, and the desire to overcome challenges.</p>
-    <Row xs={1} md={2} lg={2} className="g-5 ">
-      {cardData.map((card) => (
-        <Col key={card.id}>
-          <Card   style={{boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",}}>
-            <Card.Img variant="top" src={card.image} />
-            <Card.Body style={{backgroundColor:"black"}}>
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text>{card.text}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-    </Container>
-    </main>
+      </Col>
+      
+          <Col md={6} className="fluid " style={customContainerStyle}>
+            <Carousel fade>
+              <Carousel.Item>
+                <img
+                  src={John4}
+                  alt="First slide"
+                  className="d-block"
+                  style={customImgStyle}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={Guy4}
+                  alt="second slide"
+                  className="d-block"
+                  style={customImgStyle}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={Ryan4}
+                  alt="Third slide"
+                  className="d-block"
+                  style={customImgStyle}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  src={Joe4}
+                  alt="Fourth slide"
+                  className="d-block"
+                  style={customImgStyle}
+                />
+              </Carousel.Item>
+            
+            </Carousel>
+          </Col>
+        
+        </Row>
+        </Container>
+    </div>
   );
 }

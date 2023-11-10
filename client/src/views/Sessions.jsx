@@ -30,8 +30,7 @@ const Home = () => {
      </Row>
       
         <Row className="justify-content-center border border-black" 
-        id="#sessions"
-        style={{borderRadius:'.5rem', boxShadow:"4px 4px 8px rgba(0, 0, 0, 0.5)"}}>
+        id="#sessions">
         
           <Col
             md={3}
@@ -68,7 +67,7 @@ const Home = () => {
           <Col md={3} className="p-4">
             <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
               <Card
-                className="bg-dark text-white"
+
                 style={{
                   boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", // Change the rgba value to white
                   width: "100%",
@@ -195,8 +194,8 @@ const Home = () => {
       {" "}           
        The Impact Center
     </a>
-          <br></br><i>** All participants will be required to sign the 301CATCHING <a href="/assets/waiver.pdf" target="_blank">
-     waiver</a> prior to participation. </i></p>
+          <br></br><i>** All participants will be required to sign the 301CATCHING
+     prior to participation. </i></p>
      </Container>
         </Row>
         </Container>
