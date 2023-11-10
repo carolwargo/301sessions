@@ -8,7 +8,7 @@ import Header from './components/Header/index.jsx';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename='/301sessions'>
+      <BrowserRouter>
 <Header />
         <Routes>
           <Route path="/" element={<Home />} />

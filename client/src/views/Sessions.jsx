@@ -13,7 +13,7 @@ import "../App.css";
 
 const Sessions = () => {
   return (
-    <main className=" p-5 ">
+    <main className=" p-3 ">
 <Container >
       <Row className="d-flex justify-content-center text-center text-black" 
       

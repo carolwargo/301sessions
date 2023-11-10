@@ -8,9 +8,9 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <main className="p-5">
+    <main className="p-4">
      
-      <Container className="p-1" id="sessions">
+      <Container  id="sessions">
      
         <Sessions />
       </Container>
