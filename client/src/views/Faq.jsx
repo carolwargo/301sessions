@@ -3,30 +3,21 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Faq = () => {
   return (
-    <main className="justify-content-center align-content-around ">
-
-<Container className="d-flex justify-content-center text-center p-3 text-black"
-      style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-    
-                }}>
-        <div>
-          <h1  style={{
-    textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-    color:'red'
-   }}> 301 SESSIONS F.A.Q.</h1>
-          <p>
-           F.A.Q. Frequently Asked Questions
-          </p>
-        </div>
-      </Container>
+    <main>
+    <Container className="d-flex justify-content-center align-items-center text-center p-3 text-black" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
+      <div>
+        <h1 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", color: 'red' }}> 301 SESSIONS F.A.Q.</h1>
+        <p>F.A.Q. Frequently Asked Questions</p>
+      </div>
+    </Container>
       <Container className="faq-container border border-black"
          style={{ 
          boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
          borderRadius:'.5rem'
                    }}>
 
-        <Row className="faq-content-row p-4 bg-secondary-subtle text-black">
-          <Col md={6}>
+<Row className="faq-content-row p-4 bg-secondary-subtle text-black justify-content-between">
+<Col md={6} className="mx-auto">
             <Container>
             <h5>
               <i>Q: What do I need to bring?</i>
@@ -59,7 +50,7 @@ const Faq = () => {
             </p>
             </Container>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="mx-auto">
             <Container>
             <h5>
               <i>Q: What Are The Facility Addresses?</i>

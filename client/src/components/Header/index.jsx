@@ -1,8 +1,8 @@
 import React from 'react';
 import { MDBBtn, MDBIcon, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-
+import {motion} from 'framer-motion';
 import CoverResize from '../../assets/images/CoverResize.png'; 
-import './header.css';
+
 
 //CTA import { Link } from 'react-router-dom';
 
@@ -13,8 +13,7 @@ const Header = () => {
     background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverResize}) no-repeat center center`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
-    color: 'white',
-    height: '300px', // Adjust the height to your preference
+    color: 'white', height: '300px', // Adjust the height to your preference
     display: 'flex',
     alignItems: 'center',
   };
@@ -45,32 +44,33 @@ const Header = () => {
                 <br></br>
                 <div>
                     
-  
                 <MDBRow>
-                  <MDBCol>
-                  <MDBBtn tag='a' href="tel:4437711708" color='none' className='m-1' style={{ color: '#3b5998' }}>
-    <MDBIcon icon='phone' size='lg' />
-</MDBBtn>
+  <MDBCol className="d-flex flex-wrap align-items-center justify-content-center ">
+    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}>
+      <MDBBtn tag='a' href="tel:4437711708" color='none' style={{ color: '#3b5998' }} className='m-2'>
+        <MDBIcon icon='phone' size='lg' />
+      </MDBBtn>
+    </motion.div>
 
-
-
-      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' className='m-1' style={{ color: '#55acee' }}>
+    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}>
+      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' style={{ color: '#55acee' }}  className='m-2'>
         <MDBIcon fab icon='twitter' size='lg' />
       </MDBBtn>
- 
+    </motion.div>
 
-     
-      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' className='m-1' style={{ color: '#dd4b39' }}>
-    <MDBIcon fab icon='google' size='lg' />
-</MDBBtn>
+    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}>
+      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' style={{ color: '#dd4b39' }}  className='m-2'>
+        <MDBIcon fab icon='google' size='lg' />
+      </MDBBtn>
+    </motion.div>
 
-
-<MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' className='m-1' style={{ color: '#ac2bac' }}>
-    <MDBIcon fab icon='instagram' size='lg' />
-</MDBBtn>
-
-      </MDBCol>
-    </MDBRow>
+    <motion.div whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}>
+      <MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' style={{ color: '#ac2bac' }}  className='m-2'>
+        <MDBIcon fab icon='instagram' size='lg' />
+      </MDBBtn>
+    </motion.div>
+  </MDBCol>
+</MDBRow>
 
 
 
