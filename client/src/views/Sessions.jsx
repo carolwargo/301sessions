@@ -4,9 +4,9 @@ import {Row, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 import { Card } from "react-bootstrap";
-import Tuesday from "../assets/Tuesday.png";
-import Thursday from "../assets/Thursday.png";
-import Rawlings from "../assets/Rawlings.png";
+import Tuesday from "../assets/images/Tuesday.png";
+import Thursday from "../assets/images/Thursday.png";
+import Rawlings from "../assets/images/Rawlings.png";
 import "../App.css";
 
 

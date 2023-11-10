@@ -48,24 +48,24 @@ const Header = () => {
   
                 <MDBRow>
                   <MDBCol>
-                  <MDBBtn tag='a' href="tel:4437711708" color='none' className='m-2' style={{ color: '#3b5998' }}>
+                  <MDBBtn tag='a' href="tel:4437711708" color='none' className='m-1' style={{ color: '#3b5998' }}>
     <MDBIcon icon='phone' size='lg' />
 </MDBBtn>
 
 
 
-      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' className='m-2' style={{ color: '#55acee' }}>
+      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' className='m-1' style={{ color: '#55acee' }}>
         <MDBIcon fab icon='twitter' size='lg' />
       </MDBBtn>
  
 
      
-      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' className='m-2' style={{ color: '#dd4b39' }}>
+      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' className='m-1' style={{ color: '#dd4b39' }}>
     <MDBIcon fab icon='google' size='lg' />
 </MDBBtn>
 
 
-<MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' className='m-2' style={{ color: '#ac2bac' }}>
+<MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' className='m-1' style={{ color: '#ac2bac' }}>
     <MDBIcon fab icon='instagram' size='lg' />
 </MDBBtn>
 
