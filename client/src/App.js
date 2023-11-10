@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Routes, Route, BrowserRouter} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "../src/views/Home.jsx";
 import Sessions from './views/Sessions.jsx';
 import Footer from "./components/Footer/index.jsx";
@@ -8,7 +8,7 @@ import Header from './components/Header/index.jsx';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/client/301sessions">
 <Header />
         <Routes>
           <Route path="/" element={<Home />} />
