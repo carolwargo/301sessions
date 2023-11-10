@@ -15,49 +15,28 @@ const Footer = () => {
             md={12}
             className="d-flex justify-content-center text-center text-white"
           >
-            <a href="tel:4437711708">
-              <MDBBtn
-                tag="a"
-                color="none"
-                className="m-1"
-                style={{ color: "#3b5998" }}
-              >
-                <MDBIcon icon="phone" size="lg" />
-              </MDBBtn>
-            </a>
+                             <MDBBtn tag='a' href="tel:4437711708" color='none' className='m-1' style={{ color: '#3b5998' }}>
+    <MDBIcon icon='phone' size='lg' />
+</MDBBtn>
 
-            <a href="https://twitter.com/301Catching">
-              <MDBBtn
-                tag="a"
-                color="none"
-                className="m-1"
-                style={{ color: "#55acee" }}
-              >
-                <MDBIcon fab icon="twitter" size="lg" />
-              </MDBBtn>
-            </a>
 
-            <a href="mailto:301catching@gmail.com">
-              <MDBBtn
-                tag="a"
-                color="none"
-                className="m-1"
-                style={{ color: "#dd4b39" }}
-              >
-                <MDBIcon fab icon="google" size="lg" />
-              </MDBBtn>
-            </a>
 
-            <a href="https://www.instagram.com/301_catching/">
-              <MDBBtn
-                tag="a"
-                color="none"
-                className="m-1"
-                style={{ color: "#ac2bac" }}
-              >
-                <MDBIcon fab icon="instagram" size="lg" />
-              </MDBBtn>
-            </a>
+      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' className='m-1' style={{ color: '#55acee' }}>
+        <MDBIcon fab icon='twitter' size='lg' />
+      </MDBBtn>
+ 
+
+     
+      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' className='m-1' style={{ color: '#dd4b39' }}>
+    <MDBIcon fab icon='google' size='lg' />
+</MDBBtn>
+
+
+<MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' className='m-1' style={{ color: '#ac2bac' }}>
+    <MDBIcon fab icon='instagram' size='lg' />
+</MDBBtn>
+          
+   
           </MDBCol>
         </MDBRow>
       </Container>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBBtn, MDBIcon, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+
 import CoverResize from '../../assets/images/CoverResize.png'; 
 import './header.css';
 
@@ -43,49 +44,42 @@ const Header = () => {
                 </h5>
                 <br></br>
                 <div>
+                    
+  
                 <MDBRow>
                   <MDBCol>
-                  <a href="tel:4437711708">
-                  <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#3b5998' }}>
+                  <MDBBtn tag='a' href="tel:4437711708" color='none' className='m-2' style={{ color: '#3b5998' }}>
     <MDBIcon icon='phone' size='lg' />
 </MDBBtn>
-</a>
 
-<a href='https://twitter.com/301Catching'>
-      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#55acee' }}>
+
+
+      <MDBBtn tag='a' href='https://twitter.com/301Catching' color='none' className='m-2' style={{ color: '#55acee' }}>
         <MDBIcon fab icon='twitter' size='lg' />
       </MDBBtn>
-      </a>
+ 
 
-      <a href='mailto:301catching@gmail.com'>
-      <MDBBtn tag='a' color='none' className='m-1' style={{ color: '#dd4b39' }}>
+     
+      <MDBBtn tag='a' href='mailto:301catching@gmail.com' color='none' className='m-2' style={{ color: '#dd4b39' }}>
     <MDBIcon fab icon='google' size='lg' />
 </MDBBtn>
-</a>
 
-<a href="https://www.instagram.com/301_catching/">
-<MDBBtn tag='a' color='none' className='m-1' style={{ color: '#ac2bac' }}>
+
+<MDBBtn tag='a' href="https://www.instagram.com/301_catching/" color='none' className='m-2' style={{ color: '#ac2bac' }}>
     <MDBIcon fab icon='instagram' size='lg' />
 </MDBBtn>
-</a>
 
       </MDBCol>
     </MDBRow>
 
 
 
-  {/* 
+ 
                   <MDBCol>
      <br></br>
-      
-      <MDBBtn className='me-1' color='warning' id='sessions'>
-        <Link to="#sessions">
-        Register Now
-        </Link>
-      </MDBBtn>
      
       </MDBCol>
-   */}
+ 
 
         </div>
         </div>

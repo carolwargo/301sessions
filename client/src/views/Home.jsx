@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main className="p-5">
      
-      <Container className="p-1">
+      <Container className="p-1" id="sessions">
      
         <Sessions />
       </Container>

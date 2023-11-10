@@ -35,7 +35,6 @@ const Sessions = () => {
           <Col
             md={3}
             className="p-4 text-center"
-            id="sessions"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
            
