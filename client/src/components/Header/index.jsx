@@ -7,6 +7,11 @@ import Cover from '../../assets/images/Cover.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const scrollToSection = () => {
+  const section = document.getElementById('sessions');
+  section.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Header = () => {
   useEffect(() => {
     AOS.init({
@@ -74,11 +79,14 @@ const Header = () => {
           </motion.h5>
         
           <p>click "Sessions Signup" to register <br></br>for winter sessions now!</p>
-          <Link to="#sessions">
-            <MDBBtn className='me-1' color='warning'>
-       Sessions Signup
-      </MDBBtn>
-      </Link>
+     
+<Link to="/#sessions">
+
+  <MDBBtn className='me-1' color='warning' onClick={scrollToSection}> 
+    Sessions Signup
+  </MDBBtn>
+</Link>
+
         </div>
       </header>
       </Container>
