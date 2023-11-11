@@ -18,17 +18,17 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="p-4">
+    <main className="p-3">
       <Container className="p-2 " id="intro" data-aos="fade-up">
         <Intro />
       </Container>
       <Container data-aos="fade-up">
         <Sessions />
       </Container>
-      <Container className="p-4 border-top" id="#faq" data-aos="fade-up">
+      <Container className="p-3 border-top" id="#faq" data-aos="fade-up">
         <Faq />
       </Container>
-      <Container className="p-4 border-top" id="#testimonials" data-aos="fade-up">
+      <Container className="p-3 border-top" id="#testimonials" data-aos="fade-up">
      
         <Testimonials />
       </Container>

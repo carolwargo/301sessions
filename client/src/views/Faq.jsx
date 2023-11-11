@@ -10,7 +10,7 @@ const fadeInAnimation = {
 
 const Faq = () => {
   return (
-    <main className="p-3">
+    <main className="p-2">
        <motion.div
                   initial="hidden"
                   animate="visible"
@@ -29,9 +29,9 @@ const Faq = () => {
           borderRadius: '.5rem'
         }}>
 
-        <Row className="faq-content-row p-3 bg-secondary-subtle text-black justify-content-between">
+        <Row className="faq-content-row  bg-secondary-subtle text-black justify-content-between">
         
-<Col md={6} className="mx-auto">
+<Col md={6} className="mx-auto p-2">
 <Container>
 <img src={FaqPic} alt="faq-pic" className="img-fluid" />
          </Container>

@@ -60,26 +60,29 @@ const Header = () => {
             style={{
               fontSize: '3rem',
               textShadow: '2px 2px 4px #ffffff',
+              fontFamily: 'icon',
             }}
           >
-            301CATCHING.COM
+           301 CATCHING
           </motion.h1>
-          <br></br>
-          <motion.h4
+        
+          <motion.h5
             initial="hidden"
             animate="visible"
             variants={fadeInAnimation}
-            style={{ fontFamily: 'icon', paddingRight: '3rem', paddingLeft: '3rem' }}
+            style={{ fontFamily: 'monospace', paddingRight: '3rem', paddingLeft: '3rem' }}
           >
             {" "}
-            The <span style={{ color: 'red' }}> "FOUNDATIONAL EXPERTS" </span> for everything
+            The <span style={{ color: 'red' }}><i> "FOUNDATIONAL EXPERTS" </i></span> for everything
             catching:
         
             Providing Players with the skills to master their craft & elevate their game.
-          </motion.h4>
+          </motion.h5>
+          <br></br>
         <Container  className='pl-5 pr-5'>
-          <p>click to register for winter sessions now!</p>
+          <p >CLICK TO EXPLORE WINTER SESSIONS!</p>
      </Container>
+   
 <Link to="/#sessions">
 
   <MDBBtn className='me-1' color='warning' onClick={scrollToSection}> 
