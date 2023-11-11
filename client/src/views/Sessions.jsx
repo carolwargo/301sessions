@@ -66,7 +66,9 @@ const Sessions = () => {
           </Col>
 
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+          <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
               <Card
 
                 style={{
@@ -104,7 +106,9 @@ const Sessions = () => {
           </Col>
 
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+          <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
               <Card
                 className="tuesday"
                 style={{
@@ -143,7 +147,10 @@ const Sessions = () => {
 
           
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+            <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
+              
               <Card
                 className="rawlings"
                 style={{

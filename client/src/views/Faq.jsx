@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion"; 
-import FaqPic from "../assets/FaqPic.png";
+import FaqPic from "../assets/images/FaqPic.png";
 
 const fadeInAnimation = {
   hidden: { opacity: 0, x: -100 },

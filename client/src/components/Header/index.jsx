@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MDBBtn, MDBIcon, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import { motion } from 'framer-motion';
 import CoverRed from '../../assets/images/CoverRed.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+  useEffect(() => {
+    AOS.init({
+      // Add specific AOS configuration for Header here
+      duration: 800,
+      offset: 50,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    // Clean up AOS instance after it's used for Header
+    return () => {
+      AOS.refresh();
+    };
+  }, []); // Empty dependency array ensures this effect runs only once
+
   const headerStyle = {
     background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverRed}) no-repeat center center`,
     backgroundSize: 'cover',
@@ -15,8 +32,8 @@ const Header = () => {
   };
 
   const fadeInAnimation = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 10, x: -10 },
+    visible: { opacity: 10, x: -1 },
   };
 
   return (
@@ -24,6 +41,7 @@ const Header = () => {
       <header
         className="bg-black text-white mb-4 py-3 display-flex align-center"
         style={headerStyle}
+        data-aos="fade-up" // Add AOS data attribute for fade-up animation
       >
         <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
           <motion.h1
@@ -58,7 +76,7 @@ const Header = () => {
                   initial="hidden"
                   animate="visible"
                   variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.2 } }}
+                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
                 >
                   <MDBBtn
                     tag="a"
@@ -75,7 +93,7 @@ const Header = () => {
                   initial="hidden"
                   animate="visible"
                   variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.2 } }}
+                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
                 >
                   <MDBBtn
                     tag="a"
@@ -92,7 +110,7 @@ const Header = () => {
                   initial="hidden"
                   animate="visible"
                   variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.2 } }}
+                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
                 >
                   <MDBBtn
                     tag="a"
@@ -109,7 +127,7 @@ const Header = () => {
                   initial="hidden"
                   animate="visible"
                   variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.2 } }}
+                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
                 >
                   <MDBBtn
                     tag="a"
