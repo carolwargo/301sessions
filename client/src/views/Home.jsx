@@ -22,7 +22,7 @@ const Home = () => {
       <Container className="p-2 " id="intro" data-aos="fade-up">
         <Intro />
       </Container>
-      <Container id="sessions" data-aos="fade-up">
+      <Container data-aos="fade-up">
         <Sessions />
       </Container>
       <Container className="p-4 border-top" id="faq" data-aos="fade-up">

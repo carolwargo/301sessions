@@ -13,10 +13,10 @@ import "../App.css";
 
 const Sessions = () => {
   return (
-    <main className=" p-4">
+    <main className=" p-4" id="sessions">
       <br></br>
 <Container >
-      <Row className="d-flex justify-content-center text-center p-2" 
+      <Row className="d-flex justify-content-center text-center p-1" 
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)"
                 }}>
         <div>
@@ -29,12 +29,10 @@ const Sessions = () => {
         </div>
      </Row>
       
-        <Row className="justify-content-center align-items-center" 
-      >
-        
+        <Row className="justify-content-center align-items-center"  >
           <Col
             md={3}
-            className="p-4 text-center"
+            className="p-3 text-center"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
             <p>
