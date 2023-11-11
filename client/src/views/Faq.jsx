@@ -16,7 +16,7 @@ const Faq = () => {
           borderRadius: '.5rem'
         }}>
 
-        <Row className="faq-content-row p-4 bg-secondary-subtle text-black justify-content-between">
+        <Row className="faq-content-row p-3 bg-secondary-subtle text-black justify-content-between">
         
 <Col md={6} className="mx-auto">
 <Container>
@@ -28,7 +28,7 @@ const Faq = () => {
               <i>Q: What is the refund policy?</i>
             </h5>
             <p>
-              A: <b>Refund:</b> No Refunds. If injury or illness occurs,
+              A: <b>No Refunds:</b> If injury or illness occurs,
               please <a href="tel:443-771-1708">Contact Us</a> immediately to
               discuss possible options.  
             </p>
@@ -113,6 +113,7 @@ const Faq = () => {
           </Col>
         </Row>
       </Container>
+      <br></br>
     </main>
   );
 };

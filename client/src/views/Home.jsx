@@ -11,11 +11,11 @@ const Home = () => {
     <main className="p-3">
      
       <Container  id="sessions">
-     
+    
         <Sessions />
       </Container>
       <Container className="p-2 border-top">
-      <br></br>
+      
         <Faq />
       </Container>
       <Container className="p-2 border-top">

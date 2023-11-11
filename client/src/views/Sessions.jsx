@@ -200,7 +200,7 @@ const Sessions = () => {
      </Container>
         </Row>
         </Container>
-        <br></br>
+   
     </main>
   );
 };
