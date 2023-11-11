@@ -62,10 +62,10 @@ const Header = () => {
               textShadow: '2px 2px 4px #ffffff',
             }}
           >
-            301 CATCHING
+            301CATCHING.COM
           </motion.h1>
           <br></br>
-          <motion.h5
+          <motion.h4
             initial="hidden"
             animate="visible"
             variants={fadeInAnimation}
@@ -76,10 +76,10 @@ const Header = () => {
             catching:
         
             Providing Players with the skills to master their craft & elevate their game.
-          </motion.h5>
-        
-          <p>click "Sessions Signup" to register <br></br>for winter sessions now!</p>
-     
+          </motion.h4>
+        <Container  className='pl-5 pr-5'>
+          <p>click to register for winter sessions now!</p>
+     </Container>
 <Link to="/#sessions">
 
   <MDBBtn className='me-1' color='warning' onClick={scrollToSection}> 
