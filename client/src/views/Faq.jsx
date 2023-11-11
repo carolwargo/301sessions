@@ -10,7 +10,7 @@ const fadeInAnimation = {
 
 const Faq = () => {
   return (
-    <main>
+    <main className="p-3">
        <motion.div
                   initial="hidden"
                   animate="visible"
@@ -63,7 +63,7 @@ const Faq = () => {
               <i>Q: What Are The Facility Addresses?</i>
             </h5>
               <p>
-              A: <b> "301 SOUTH"</b> <br></br>
+              <b> "301 SOUTH"</b> <br></br>
                 The Impact Center<br></br>
                 <img
                   src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png"

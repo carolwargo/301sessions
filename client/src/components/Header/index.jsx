@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
-import { MDBBtn, MDBIcon, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { MDBBtn} from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import CoverRed from '../../assets/images/CoverRed.png';
+import Container from 'react-bootstrap/Container';
+import Cover from '../../assets/images/Cover.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,11 +24,11 @@ const Header = () => {
   }, []); // Empty dependency array ensures this effect runs only once
 
   const headerStyle = {
-    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverRed}) no-repeat center center`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Cover}) no-repeat center center`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     color: 'white',
-    height: '300px',
+    height: '350px',
     display: 'flex',
     alignItems: 'center',
   };
@@ -38,8 +40,9 @@ const Header = () => {
 
   return (
     <main>
+      <Container>
       <header
-        className="bg-black text-white mb-4 py-3 display-flex align-center"
+        className="bg-black text-white py-3 display-flex align-center "
         style={headerStyle}
         data-aos="fade-up" // Add AOS data attribute for fade-up animation
       >
@@ -48,13 +51,13 @@ const Header = () => {
             initial="hidden"
             animate="visible"
             variants={fadeInAnimation}
-            className="m-0"
+            className="m-0 "
             style={{
-              fontSize: '3.5rem',
+              fontSize: '3rem',
               textShadow: '2px 2px 4px #ffffff',
             }}
           >
-            301_CATCHING
+            301 CATCHING
           </motion.h1>
           <br></br>
           <motion.h5
@@ -66,88 +69,19 @@ const Header = () => {
             {" "}
             The <span style={{ color: 'red' }}> "FOUNDATIONAL EXPERTS" </span> for everything
             catching:
-            <br></br>
+        
             Providing Players with the skills to master their craft & elevate their game.
           </motion.h5>
-          <div>
-            <MDBRow>
-              <MDBCol className="d-flex flex-wrap align-items-center justify-content-center ">
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
-                >
-                  <MDBBtn
-                    tag="a"
-                    href="tel:4437711708"
-                    color="none"
-                    style={{ color: '#3b5998' }}
-                    className="m-2"
-                  >
-                    <MDBIcon icon="phone" size="lg" />
-                  </MDBBtn>
-                </motion.div>
-
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
-                >
-                  <MDBBtn
-                    tag="a"
-                    href="https://twitter.com/301Catching"
-                    color="none"
-                    style={{ color: '#55acee' }}
-                    className="m-2"
-                  >
-                    <MDBIcon fab icon="twitter" size="lg" />
-                  </MDBBtn>
-                </motion.div>
-
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
-                >
-                  <MDBBtn
-                    tag="a"
-                    href="mailto:301catching@gmail.com"
-                    color="none"
-                    style={{ color: '#dd4b39' }}
-                    className="m-2"
-                  >
-                    <MDBIcon fab icon="google" size="lg" />
-                  </MDBBtn>
-                </motion.div>
-
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={fadeInAnimation}
-                  whileHover={{ scale: 1.3, transition: { duration: 0.3 } }}
-                >
-                  <MDBBtn
-                    tag="a"
-                    href="https://www.instagram.com/301_catching/"
-                    color="none"
-                    style={{ color: '#ac2bac' }}
-                    className="m-2"
-                  >
-                    <MDBIcon fab icon="instagram" size="lg" />
-                  </MDBBtn>
-                </motion.div>
-              </MDBCol>
-            </MDBRow>
-
-            <MDBCol>
-              <br></br>
-            </MDBCol>
-          </div>
+        
+          <p>click "Sessions Signup" to register <br></br>for winter sessions now!</p>
+          <Link to="#sessions">
+            <MDBBtn className='me-1' color='warning'>
+       Sessions Signup
+      </MDBBtn>
+      </Link>
         </div>
       </header>
+      </Container>
     </main>
   );
 };

@@ -29,7 +29,7 @@ export default function CarouselFadeExample() {
     <div>
   
     <Container>
-        <Row className="d-flex justify-content-center p-1">
+        <Row className="d-flex justify-content-center p-3">
           <Col md={6}>
             <br></br>
            

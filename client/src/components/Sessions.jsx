@@ -4,19 +4,19 @@ import {Row, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 import { Card } from "react-bootstrap";
-import Tuesday from "../assets/Tuesday.png";
-import Thursday from "../assets/Thursday.png";
-import Rawlings from "../assets/Rawlings.png";
+import Tuesday from "../assets/images/Tuesday.png";
+import Thursday from "../assets/images/Thursday.png";
+import Rawlings from "../assets/images/Rawlings.png";
 import "../App.css";
 
 
 
 const Sessions = () => {
   return (
-    <main className=" p-3 ">
+    <main className=" p-4">
+      <br></br>
 <Container >
-      <Row className="d-flex justify-content-center text-center text-black" 
-      
+      <Row className="d-flex justify-content-center text-center p-2" 
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)"
                 }}>
         <div>
@@ -29,18 +29,16 @@ const Sessions = () => {
         </div>
      </Row>
       
-        <Row className="justify-content-center " 
-        id="sessions">
+        <Row className="justify-content-center align-items-center" 
+      >
         
           <Col
             md={3}
             className="p-4 text-center"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-           
-           
             <p>
-              <b>TUESDAY SESSION </b>"South"
+              <b>TUESDAY SESSION</b> "South"
             
               Grades 9-12<br></br>
               12/12, 12/19, 12/26<br></br>
@@ -65,7 +63,9 @@ const Sessions = () => {
           </Col>
 
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+          <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
               <Card
 
                 style={{
@@ -103,7 +103,9 @@ const Sessions = () => {
           </Col>
 
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+          <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
               <Card
                 className="tuesday"
                 style={{
@@ -142,7 +144,10 @@ const Sessions = () => {
 
           
           <Col md={3} className="p-4">
-            <motion.div whileHover={{ scale: 0.95 }} whileTap={{ scale: 0.9 }}>
+            <motion.div 
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            whileTap={{ scale: 0.9 }}>
+              
               <Card
                 className="rawlings"
                 style={{
@@ -199,7 +204,7 @@ const Sessions = () => {
      </Container>
         </Row>
         </Container>
-        <br></br>
+   
     </main>
   );
 };
