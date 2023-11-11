@@ -33,19 +33,18 @@ const Faq = () => {
         style={{paddingTop:'1rem', paddingBottom:'1rem'}}
         >
         
-<Col md={6} className="mx-auto p-1" >
+<Col md={6} className="mx-auto p-2" >
 <Container>
 <img src={FaqPic} alt="faq-pic" className="img-fluid" />
          </Container>
          <br></br>
-            <Container>
+         <Container>
             <h5>
-              <i>Q: What is the refund policy?</i>
+              <i>Q: Who do I contact with questions?</i>
             </h5>
             <p>
-              A: <b>No Refunds:</b> If injury or illness occurs,
-              please <a href="tel:443-771-1708">Contact Us</a> immediately to
-              discuss possible options.  
+              You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
+              <a href="tel:443-771-1708">Call</a> Corey Wargo at anytime.
             </p>
             </Container>
           
@@ -118,11 +117,12 @@ const Faq = () => {
             </Container>
             <Container>
             <h5>
-              <i>Q: Who do I contact with questions?</i>
+              <i>Q: What is the refund policy?</i>
             </h5>
             <p>
-              You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
-              <a href="tel:443-771-1708">Call</a> Corey Wargo at anytime.
+              A: <b>No Refunds:</b> If injury or illness occurs,
+              please <a href="tel:443-771-1708">Contact Us</a> immediately to
+              discuss possible options.  
             </p>
             </Container>
           </Col>
