@@ -1,9 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion"; 
 import FaqPic from "../assets/FaqPic.png";
+
+const fadeInAnimation = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0 },
+};
+
 const Faq = () => {
   return (
     <main>
+       <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={fadeInAnimation}
+                  whileHover={{ scale: .5, transition: { duration: 125.5 } }}
+                >
       <Container className="d-flex justify-content-center align-items-center text-center p-3 text-black" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
         <div>
           <h1 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", color: 'red' }}> 301 SESSIONS F.A.Q.</h1>
@@ -112,8 +125,10 @@ const Faq = () => {
             </Container>
           </Col>
         </Row>
+       
       </Container>
       <br></br>
+      </motion.div>
     </main>
   );
 };
