@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="p-4 border-bottom d-flex flex-column align-items-center" id="intro">
+    <div className="p-3 border-bottom d-flex flex-column align-items-center" id="intro">
       <h1
         style={{
           textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",

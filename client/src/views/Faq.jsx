@@ -29,9 +29,11 @@ const Faq = () => {
           borderRadius: '.5rem'
         }}>
 
-        <Row className="faq-content-row  bg-secondary-subtle text-black justify-content-between">
+        <Row className="faq-content-row  bg-secondary-subtle text-black justify-content-between"
+        style={{paddingTop:'1rem', paddingBottom:'1rem'}}
+        >
         
-<Col md={6} className="mx-auto p-2">
+<Col md={6} className="mx-auto p-1" >
 <Container>
 <img src={FaqPic} alt="faq-pic" className="img-fluid" />
          </Container>

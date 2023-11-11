@@ -33,7 +33,7 @@ const Header = () => {
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     color: 'white',
-    height: '350px',
+    height: '410px',
     display: 'flex',
     alignItems: 'center',
   };
@@ -47,7 +47,7 @@ const Header = () => {
     <main>
       <Container>
       <header
-        className="bg-black text-white py-3 display-flex align-center "
+        className="bg-black text-white py-2 display-flex align-center "
         style={headerStyle}
         data-aos="fade-up" // Add AOS data attribute for fade-up animation
       >
@@ -65,8 +65,8 @@ const Header = () => {
           >
            301 CATCHING
           </motion.h1>
-        
-          <motion.h5
+        <br></br>
+          <motion.h4
             initial="hidden"
             animate="visible"
             variants={fadeInAnimation}
@@ -77,7 +77,7 @@ const Header = () => {
             catching:
         
             Providing Players with the skills to master their craft & elevate their game.
-          </motion.h5>
+          </motion.h4>
           <br></br>
         <Container  className='pl-5 pr-5'>
           <p >CLICK TO EXPLORE WINTER SESSIONS!</p>

@@ -42,7 +42,7 @@ export default function CarouselFadeExample() {
         TESTIMONIALS</h1>
         <h4>See What People Have To Say...</h4>
         <br></br>
-      <p>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
+      <p className='pl-1 pr-1'>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
       </Col>
       
           <Col md={5} className="fluid " style={customContainerStyle}>
