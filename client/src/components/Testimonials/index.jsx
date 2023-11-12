@@ -29,7 +29,7 @@ export default function CarouselFadeExample() {
     <div>
   
     <Container>
-        <Row className="d-flex justify-content-center p-2">
+        <Row className="d-flex  p-1">
           <Col md={6}>
             <br></br>
            
@@ -40,9 +40,9 @@ export default function CarouselFadeExample() {
        }}
        >
         TESTIMONIALS</h1>
-        <h4>See What People Have To Say...</h4>
+        <h5>See What People Have To Say...</h5>
         <br></br>
-      <p className='pl-1 pr-1'>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
+      <p className=''>As we read and celebrate these testimonials, we are reminded that success doesn't happen by chance and that baseball is more than just a game. It's about teamwork, discipline, growth, hard work, consistency, and the desire to overcome challenges.</p>
       </Col>
       
           <Col md={5} className="fluid " style={customContainerStyle}>

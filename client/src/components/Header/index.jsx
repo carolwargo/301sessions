@@ -69,22 +69,21 @@ const Header = () => {
             initial="hidden"
             animate="visible"
             variants={fadeInAnimation} 
-            style={{ paddingRight: '4rem', paddingLeft: '4rem' }}
+            style={{ paddingRight: '3rem', paddingLeft: '3rem' }}
           >
-         The <span style={{ color: 'red' }}><i>'FOUNDATIONAL EXPERTS'</i></span> for everything
-            catching:<br></br> Providing Catchers with the skills to Master their craft & Elevate their game.
-          
+         The <span style={{ color: 'red', fontFamily:'serif' }}><i>'FOUNDATIONAL EXPERTS'</i></span> for everything
+            catching:
       </motion.h6>
-         
+         <p>Providing Catchers with the skills <br></br>to Master their craft & Elevate their game.</p>
           <br></br>
         <Container  className='pl-5 pr-5'>
-          <p >Click to see the 2023 Winter Sessions Offered!</p>
+          <p >Click to see the 2023 Winter Sessions!</p>
      </Container>
    
 <Link to="/#sessions">
 
   <MDBBtn className='me-1' color='warning' onClick={scrollToSection}> 
-    Sessions Signup
+    Sessions 
   </MDBBtn>
 </Link>
 

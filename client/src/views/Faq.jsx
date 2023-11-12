@@ -47,7 +47,16 @@ const Faq = () => {
               <a href="tel:443-771-1708">Call</a> Corey Wargo at anytime.
             </p>
             </Container>
-          
+            <Container>
+            <h5>
+              <i>Q: What is the refund policy?</i>
+            </h5>
+            <p>
+              A: <b>No Refunds:</b> If injury or illness occurs,
+              please <a href="tel:443-771-1708">Contact Us</a> immediately to
+              discuss possible options.  
+            </p>
+            </Container>
           </Col>
           <Col md={6} className="mx-auto justify-content-center">
           <Container>
@@ -110,21 +119,14 @@ const Faq = () => {
                 <i>Q: What Winter Sessions Are Offered?</i>
               </h5>
               <p>
-               <b><i>"301 NORTH"</i> - Grades: 9-12 </b>12/6, 12/13, 12/20, 12/27 <br></br>
-               <b><i>"301 SOUTH"</i> - Grades: 9-12 </b>12/12, 12/19, 12/26, 12/27 <br></br>
-               <b><i>"301 SOUTH"</i> - Ages: 9-14yrs </b> 12/12, 12/19, 12/26, 12/27 
+               <b><i>"301 NORTH WEDNESDAYS"</i></b> - <br></br>Grades: 9-12 Dates: 12/6, 12/13, 12/20, 12/27 <br></br>
+               <br></br>
+               <b><i>"301 SOUTH TUESDAYS"</i></b> - <br></br>Grades: 9-12 Dates: 12/12, 12/19, 12/26, 12/27 <br></br>
+               <br></br>
+               <b><i>"301 SOUTH THURSDAYS"</i></b> - <br></br>Ages: 9-14yrs Dates: 12/12, 12/19, 12/26, 12/27 
               </p>
             </Container>
-            <Container>
-            <h5>
-              <i>Q: What is the refund policy?</i>
-            </h5>
-            <p>
-              A: <b>No Refunds:</b> If injury or illness occurs,
-              please <a href="tel:443-771-1708">Contact Us</a> immediately to
-              discuss possible options.  
-            </p>
-            </Container>
+            
           </Col>
         </Row>
        

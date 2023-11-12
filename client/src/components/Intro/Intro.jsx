@@ -25,9 +25,9 @@ const Intro = () => {
       >
         WELCOME TO 301CATCHING.COM
       </h3>
-    <motion.div className="p-1  d-flex flex-column align-items-center" id="intro">
+    <motion.div className="d-flex flex-column align-items-center" id="intro">
     <motion.div className="border-bottom"
-     style={{ fontFamily: 'serif', paddingRight: '3rem', paddingLeft: '3rem' }}
+     style={{ fontFamily: 'serif'}}
     >
       <motion.p className="text-center"         
       initial="hidden"
