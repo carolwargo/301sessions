@@ -28,7 +28,7 @@ export default function Newsletter() {
               </svg>
             </div>
 
-            <div className="d-flex flex-column lg:flex-row justify-content-between items-center bg-danger text-white p-5" data-aos="fade-up">
+            <div className="d-flex flex-column lg:flex-row justify-content-between items-center text-white p-5" data-aos="fade-up" style={{backgroundColor:'red'}}>
               {/* CTA content */}
               <div className="mb-6 lg:mb-0 text-center lg:text-left lg:w-1/2">
                 <h3 className="h3 mb-2">Stay in the loop</h3>
@@ -46,7 +46,7 @@ export default function Newsletter() {
                     value={email}
                     onChange={handleEmailChange}
                   />
-                  <button type="submit" className="btn btn-outline-light">
+                  <button type="submit" className="btn btn-outline-light  mr-sm-2">
                     Subscribe
                   </button>
                 </div>

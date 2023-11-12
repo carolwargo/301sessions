@@ -29,13 +29,13 @@ const Faq = () => {
           borderRadius: '.5rem'
         }}>
 
-        <Row className="faq-content-row  bg-secondary-subtle text-black justify-content-between"
+        <Row className="faq-content-row  bg-secondary-subtle text-black justify-content-center"
         style={{paddingTop:'1rem', paddingBottom:'1rem'}}
         >
         
 <Col md={6} className="mx-auto p-2" >
 <Container>
-<img src={FaqPic} alt="faq-pic" className="img-fluid" />
+<img src={FaqPic} alt="faq-pic" className="img-fluid justify-content-center" />
          </Container>
          <br></br>
          <Container>
@@ -49,7 +49,7 @@ const Faq = () => {
             </Container>
           
           </Col>
-          <Col md={6} className="mx-auto">
+          <Col md={6} className="mx-auto justify-content-center">
           <Container>
             <h5>
               <i>Q: What do I need to bring?</i>

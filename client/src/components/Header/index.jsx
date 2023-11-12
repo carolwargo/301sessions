@@ -29,7 +29,7 @@ const Header = () => {
   }, []); // Empty dependency array ensures this effect runs only once
 
   const headerStyle = {
-    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Cover}) no-repeat center center`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url(${Cover}) no-repeat center center`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     color: 'white',
@@ -58,29 +58,27 @@ const Header = () => {
             variants={fadeInAnimation}
             className="m-0 "
             style={{
-              fontSize: '3rem',
+              fontSize: '4rem',
               textShadow: '2px 2px 4px #ffffff',
-              fontFamily: 'icon',
+              fontFamily: 'serif',
             }}
           >
-           301 CATCHING
+          <b> 301 CATCHING</b>
           </motion.h1>
-        <br></br>
-          <motion.h4
+          <motion.h6 className="text-center"         
             initial="hidden"
             animate="visible"
-            variants={fadeInAnimation}
-            style={{ fontFamily: 'monospace', paddingRight: '3rem', paddingLeft: '3rem' }}
+            variants={fadeInAnimation} 
+            style={{ paddingRight: '4rem', paddingLeft: '4rem' }}
           >
-            {" "}
-            The <span style={{ color: 'red' }}><i> "FOUNDATIONAL EXPERTS" </i></span> for everything
-            catching:
-        
-            Providing Players with the skills to master their craft & elevate their game.
-          </motion.h4>
+         The <span style={{ color: 'red' }}><i>'FOUNDATIONAL EXPERTS'</i></span> for everything
+            catching:<br></br> Providing Catchers with the skills to Master their craft & Elevate their game.
+          
+      </motion.h6>
+         
           <br></br>
         <Container  className='pl-5 pr-5'>
-          <p >CLICK TO EXPLORE WINTER SESSIONS!</p>
+          <p >Click to see the 2023 Winter Sessions Offered!</p>
      </Container>
    
 <Link to="/#sessions">

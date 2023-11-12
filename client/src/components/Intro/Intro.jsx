@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import AOS from "aos";
 
-export default function Intro() {
+const fadeInAnimation = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+    };
+
+const Intro = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+          });
+        }, []);
+
   return (
-    <div className="p-3 border-bottom d-flex flex-column align-items-center" id="intro">
-      <h1
+    <div className="p-3 d-flex flex-column align-items-center" id="intro" data-aos= 'fade-up'>
+      <h3
         style={{
           textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
           color: "red",
@@ -11,16 +24,31 @@ export default function Intro() {
         }}
       >
         WELCOME TO 301CATCHING.COM
-      </h1>
-      <p className="text-center p-2">
-        Your premier destination for all things Catching, designed to elevate
-        your training to an elite level. Here, we empower our Catchers to build
-        a solid foundation that propels you towards excellence. Whether you're a
-        seasoned athlete or just beginning, discover the expertise needed to
-        reach new heights and redefine what it means to excel in the world of
-        Catching.
-      </p>
-      <br />
+      </h3>
+    <motion.div className="p-1  d-flex flex-column align-items-center" id="intro">
+    <motion.div className="border-bottom"
+     style={{ fontFamily: 'serif', paddingRight: '3rem', paddingLeft: '3rem' }}
+    >
+      <motion.p className="text-center"         
+      initial="hidden"
+            animate="visible"
+            variants={fadeInAnimation}
+           
+          >
+        <i>'The premier destination for 
+      all things catching, meticulously designed to elevate your training 
+      to elite levels. Here, we empower our catchers by instilling a 
+      strong foundation that propels them towards excellence. Whether you're 
+      a seasoned athlete or just starting your journey, we offer 
+      the expertise needed to reach new heights and redefine what it means to excel in the world of
+        Catching.'</i>
+      </motion.p>
+ 
+    <br></br>
+    </motion.div>
+   </motion.div>
     </div>
   );
 }
+
+export default Intro;
