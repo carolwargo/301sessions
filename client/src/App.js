@@ -4,6 +4,7 @@ import Home from "../src/views/Home.jsx";
 import Footer from "./components/Footer/index.jsx";
 import Header from './components/Header/index.jsx';
 import Sessions from './components/Sessions.jsx';
+import './App.css';
 
 function App() {
   return (

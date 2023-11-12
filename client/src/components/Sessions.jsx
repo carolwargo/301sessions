@@ -14,9 +14,9 @@ import "../App.css";
 const Sessions = () => {
   return (
     <main className=" p-4" id="sessions">
-      <br></br>
+    
 <Container >
-      <Row className="d-flex justify-content-center text-center p-1" 
+      <Row className="d-flex justify-content-center text-light bg-dark text-center p-1 " 
       style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)"
                 }}>
         <div>

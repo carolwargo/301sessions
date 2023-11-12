@@ -27,9 +27,10 @@ const customImgStyle = {
 export default function CarouselFadeExample() {
   return (
     <div>
-  
+   <br></br>
     <Container>
-        <Row className="d-flex  p-1">
+        
+        <Row className="d-flex justify-content-center text-light bg-dark text-center p-1 " >
           <Col md={6}>
             <br></br>
            

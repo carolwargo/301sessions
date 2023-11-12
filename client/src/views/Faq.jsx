@@ -7,12 +7,13 @@ import FaqPic from "../assets/images/FaqPic.png";
 const Faq = () => {
   return (
     <main className="p-2">
-       <div >
-      <Container className="d-flex justify-content-center align-items-center text-center p-3 text-black" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
-        <div>
+     <div>
+    <br></br>
+      <Container>
+        <Row className="d-flex justify-content-center align-items-center text-center p-4 bg-dark text-white" style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)" }}>
           <h1 style={{ textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", color: 'red' }}> 301 SESSIONS F.A.Q.</h1>
           <p>F.A.Q. Frequently Asked Questions</p>
-        </div>
+        </Row>
       </Container>
       <Container className="faq-container border border-black"
         style={{ 
@@ -24,45 +25,28 @@ const Faq = () => {
         style={{paddingTop:'1rem', paddingBottom:'1rem'}}
         >
         
-<Col md={6} className="mx-auto p-2" >
+<Col md={8} className="mx-auto p-2" >
 <Container>
 <img src={FaqPic} alt="faq-pic" className="img-fluid justify-content-center" />
          </Container>
          <br></br>
-         <Container>
-            <h5>
-              <i>Q: Who do I contact with questions?</i>
-            </h5>
-            <p>
-              You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
-              <a href="tel:443-771-1708">Call</a> Corey Wargo at anytime.
-            </p>
-            </Container>
-            <Container>
-            <h5>
-              <i>Q: What is the refund policy?</i>
-            </h5>
-            <p>
-              A: <b>No Refunds:</b> If injury or illness occurs,
-              please <a href="tel:443-771-1708">Contact Us</a> immediately to
-              discuss possible options.  
-            </p>
-            </Container>
+       
+          
           </Col>
-          <Col md={6} className="mx-auto justify-content-center">
-          <Container>
-            <h5>
+          <Col md={4} className="mx-auto justify-content-center p-3">
+          <Container style={{fontSize:'14px'}}>
+            <h6 style={{color:'red'}}>
               <i>Q: What do I need to bring?</i>
-            </h5>
+            </h6>
             <p>
               A: All catchers should bring cup, gear, mitt, drink, athletic
-              shoes {"NO CLEATS OF ANY KIND ALLOWED."}
+              shoes <b>{"NO CLEATS OF ANY KIND ALLOWED."}</b>
             </p>
             </Container>
-            <Container>
-            <h5>
+            <Container style={{fontSize:'14px'}}>
+             <h6 style={{color:'red'}}>
               <i>Q: What Are The Facility Addresses?</i>
-            </h5>
+            </h6>
               <p>
               <b> "301 SOUTH"</b> <br></br>
                 The Impact Center<br></br>
@@ -83,7 +67,7 @@ const Faq = () => {
                 </a>
               </p>
             </Container>
-            <Container className="301-north" id="301-north">
+            <Container style={{fontSize:'14px'}}>
               <p>
                 <b>"301 NORTH"</b> <br></br>
                 The Rawlings Lab<br></br>
@@ -105,22 +89,38 @@ const Faq = () => {
               </p>
             </Container>
 
-            <Container>
-              <h5>
+            <Container style={{fontSize:'14px'}}>
+               <h6 style={{color:'red'}}>
                 <i>Q: What Winter Sessions Are Offered?</i>
-              </h5>
-              <p>
-               <b><i>"301 NORTH WEDNESDAYS"</i></b> - <br></br>Grades: 9-12 Dates: 12/6, 12/13, 12/20, 12/27 <br></br>
-               <br></br>
-               <b><i>"301 SOUTH TUESDAYS"</i></b> - <br></br>Grades: 9-12 Dates: 12/12, 12/19, 12/26, 12/27 <br></br>
-               <br></br>
-               <b><i>"301 SOUTH THURSDAYS"</i></b> - <br></br>Ages: 9-14yrs Dates: 12/12, 12/19, 12/26, 12/27 
-              </p>
+              </h6>
+
+              <ul>
+               <li><b><i>"301 North Wednesdays"</i></b> - Grades: 9-12 Dates: 12/6, 12/13, 12/20, 12/27 </li>
+             
+               <li><b><i>"301 South Tuesdays"</i></b> - Grades: 9-12 Dates: 12/12, 12/19, 12/26, 12/27</li>
+           
+               <li><b><i>"301 South Thurdays"</i></b> - Ages: 9-14yrs Dates: 12/12, 12/19, 12/26, 12/27 </li>
+              </ul>
             </Container>
-            
+            <Container style={{fontSize:'14px'}}>
+             <h6 style={{color:'red'}}>
+              <i>Q: What is the refund policy?</i>
+            </h6>
+            <p>
+              A: <b>No Refunds:</b> If injury or illness occurs,
+              please <a href="tel:443-771-1708">Contact Us</a> immediately to
+              discuss possible options.  
+            </p>
+            </Container>
           </Col>
-        </Row>
        
+            <p className="text-center">
+              You may <a href="mailto:301CATCHING@GMAIL.COM">Email</a> or{" "}
+              <a href="tel:443-771-1708">Call</a> us at anytime with questions or concerns.
+            </p>
+           
+        </Row>
+       <Row></Row>
       </Container>
       <br></br>
       </div>
